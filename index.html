@@ -1,0 +1,126 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>Single page template</title> 
+	<link rel="stylesheet" href="satu.css" />
+	<script src="satu.js"></script>
+	<script src="satuu.js"></script>
+    <script type="text/javascript" src="cordova-2.6.0.js"></script>
+</head> 
+
+<body> 
+
+<div data-role="page" id="main">
+
+	<div data-role="header">
+		<h1>BIODATA</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">		
+	  <ul data-role="listview" data-inset="true" >
+			<li data-role="list-divider">About Me</li>
+			<li> 
+            	<table>
+                	<tr>
+                    	<td colspan="2"><img src="hilmi.jpg"></td>
+                        
+                    </tr>
+                	<tr>
+                    	<td>Nama</td>
+                        <td>Muhammad Hilmi Hadi Saputra </td>
+                    </tr>
+                    <tr>
+                    	<td>Kelas</td>
+                        <td>MCC 11 03 </td>
+                    </tr>
+                    <tr>
+                    	<td>NIM	</td>
+                        <td>30111022</td>
+                    </tr>
+                    <tr>
+                    	<td>Hobby</td>
+                        <td>Berenang </td>
+                    </tr>
+                    <tr>
+                    	<td>Twitter</td>
+                        <td>@hilmiarsen </td>
+                    </tr>
+                </table>
+            </li>
+		</ul>
+	</div><!-- /content -->
+    
+    <div class="content-primary">
+						
+		<ul data-role="listview" data-theme="d" data-divider-theme="d">
+			<li data-role="list-divider">Friday, October 8, 2010 <span class="ui-li-count">2</span></li>
+			<li><a href="#">
+				
+					<h3>Twitter</h3>
+					<p><strong>@hilmiarsen</strong></p>
+					<p>aduh pusing broo #Galau</p>
+					<p class="ui-li-aside"><strong>6:24</strong>PM</p>
+				
+			</a></li>
+			<li><a href="#">
+				
+				<h3>Fcebook</h3>
+				<p><strong>Muhammad Hilmi H S</strong></p>
+				<p>Kalo pusing meningan ngePES aja.</p>
+				<p class="ui-li-aside"><strong>9:18</strong>AM</p>
+				
+			</a></li>
+		</ul>
+		</div>
+	<div data-role="footer" data-position="fixed">
+	<div data-role="navbar">
+			<ul>
+				<li><a href="#main" data-icon="grid" data-transition="flip" data-prefetch class="ui-btn-active ui-state-persist">Boidata</a></li>
+				<li><a href="#photo" data-icon="home" data-transition="flip" data-prefetch>Photo</a></li>
+			</ul>
+		</div>
+        </div><!-- /footer -->
+	
+</div><!-- /page -->
+
+<div data-role="page" id="photo">
+
+	<div data-role="header">
+		<h1>Photo</h1>
+	</div><!-- /header -->
+			
+		<div class="content-primary">	
+		<ul data-role="listview" data-split-icon="gear" data-split-theme="d">
+			<li><a href="#">
+				<img src="992444_747658428583108_1969491826_n.jpg" />
+				<h3>Merah Merona</h3>
+				<p>Suasana kantin kampus TASS dengan pemandangan danau Galau Telkom University</p>
+				</a><a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop">Purchase album</a>
+			</li>
+            
+            <li><a href="#">
+				<img src="hilmi.jpg" />
+				<h3>Kece</h3>
+				<p>Nunggu Giliran Foto</p>
+				</a><a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop">Purchase album</a>
+			</li>
+			
+		</ul>
+		</div>
+	<!-- /content -->
+	<div data-role="footer" data-position="fixed">
+	<div data-role="navbar">
+			<ul>
+				<li><a href="#main" data-icon="grid" data-transition="flip" data-prefetch>Biodata</a></li>
+				<li><a href="#photo" data-icon="home" data-transition="flip" data-prefetch class="ui-btn-active ui-state-persist">Photo</a></li>
+			</ul>
+		</div>
+        </div><!-- /footer -->
+	
+</div><!-- /page -->
+
+</body>
+</html>
